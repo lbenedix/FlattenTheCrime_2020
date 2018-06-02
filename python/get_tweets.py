@@ -14,9 +14,6 @@ auth = twitter.get_authentication_tokens()
 OAUTH_TOKEN = auth['oauth_token']
 OAUTH_TOKEN_SECRET = auth['oauth_token_secret']
 
-print(OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-print('=======')
-
 bezirke = ['CharlottenburgNord', 'Malchow', 'Altglienicke', 'Adlershof', 'Dahlem', 'Tiergarten', 'Hansaviertel',
            'FalkenhagenerFeld', 'Wilhelmstadt', 'Rahnsdorf', 'Tegel', 'Rosenthal', 'Britz', 'AltTreptow',
            'Charlottenburg', 'Heiligensee', 'Mitte', 'Buckow', 'Kreuzberg', 'Zehlendorf', 'Gesundbrunnen', 'Wannsee',
@@ -66,8 +63,8 @@ done_ids = list()
 
 for p in range(35):
     results = twitter.get_user_timeline(screen_name='PolizeiBerlin_E', count=200, include_rts=True, page=p)
-    print('.', end='')
-    # if len(results) == 0: break
+
+    if len(results) == 0: break
 
     for tweet in results:
         hash_tags = list()
