@@ -45,6 +45,7 @@ known_locations = {
     'sachsendamm': 'Schöneberg',
     'oberbaumbruecke': 'Kreuzberg',
     'oberbaumbrücke': 'Kreuzberg',
+    'kotti': 'Kreuzberg',
     'ostkreuz': 'Friedrichshain',
     'alex': 'Mitte',
     'kulturbrauerei': 'Prenzlauer Berg',
@@ -80,7 +81,7 @@ for p in range(35):
             t['time'] = dt.strftime('%Y%m%d%H%M%S')
             t['id'] = tweet['id']
             t['url'] = 'https://twitter.com/{}/status/{}'.format('PolizeiBerlin_E', tweet['id'])
-            if int(t['time'][:4]) < 2017:
+            if int(t['time'][:4]) < 2018:
                 continue
 
             for h in hash_tags:
