@@ -55,6 +55,8 @@ known_locations = {
     'humboldthain': 'Gesundbrunnen',
     'pberg': 'Prenzlauer Berg',
     'prenzelberg': 'Prenzlauer Berg',
+    'markusplatz':'Steglitz',
+    'gleisdreieck': 'Kreuzberg',
 }
 
 tweets = list()
@@ -72,7 +74,7 @@ for p in range(35):
         for h in tweet['entities']['hashtags']:
             hash_tags.append(h['text'])
 
-        if '24hPolizei' in hash_tags:  # and not tweet['in_reply_to_screen_name']:
+        if 'flattenthecrime' in hash_tags:  # and not tweet['in_reply_to_screen_name']:
             t = OrderedDict()
             t['bezirk'] = ''
             t['text'] = tweet['text']
@@ -115,7 +117,7 @@ for p in range(35):
 print(len(tweets))
 json.dump(
     tweets,
-    open('24hPolizei_2018.json', 'w', encoding='utf8'),
+    open('FlattenTheCrime_2020.json', 'w', encoding='utf8'),
     indent=2,
     ensure_ascii=False,
     sort_keys=False

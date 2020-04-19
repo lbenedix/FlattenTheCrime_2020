@@ -1,9 +1,9 @@
 24hPolizei
 ==========
 
-Eine interaktive Visualisierung der [#24hPolizei](https://twitter.com/hashtag/24hPolizei)-Aktion der [Berliner Polizei](https://twitter.com/PolizeiBerlin_E) vom 01.06.2018 - 02.06.2018.
+Eine interaktive Visualisierung der [#FlattenTheCrime](https://twitter.com/hashtag/FlattenTheCrime)-Aktion der [Berliner Polizei](https://twitter.com/PolizeiBerlin_E) vom 18.04.2020.
 
 
-<a href="https://lbenedix.github.io/24hPolizei">![Screenshot](https://lbenedix.github.io/24hPolizei/karte.png)</a>
+<a href="https://lbenedix.github.io/FlattenTheeCrime_2020">![Screenshot](https://lbenedix.github.io/FlattenTheeCrime_2020/karte.png)</a>
 
-https://lbenedix.github.io/24hPolizei_2018
+https://lbenedix.github.io/FlattenTheeCrime_2020
